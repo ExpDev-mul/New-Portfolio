@@ -1,0 +1,46 @@
+@font-face{
+  font-family: 'EncodeSans';
+  src: url('./fonts/EncodeSans.ttf')
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('./fonts/SourceCodePro.ttf');
+}
+
+:root {
+  font-family: EncodeSans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: rgb(18, 18, 18);
+  
+  --secondary-color: hsl(0, 0%, 8%);
+  --secondary-color-lighten: hsl(0, 0%, 13%);
+
+  --primary-border-color: rgb(75, 75, 75);
+  --secondary-border-color: rgb(40, 40, 40);
+
+  --primary-color-faded: rgba(75, 75, 75, 0.1);
+
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(215, 215, 215);
+  --third-text-color: rgba(175, 175, 175, 0.7);
+}
+
+body{
+  background: url(./assets/grid.svg);
+  background-position: -30px -5px;
+  background-size: 60px;
+  background-repeat: repeat;
+  background-color: var(--primary-color);
+}
+
+button:hover{
+  cursor: pointer;
+}

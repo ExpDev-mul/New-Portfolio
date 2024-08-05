@@ -1,0 +1,38 @@
+.container{
+    width: 550px;
+    height: 350px;
+    padding-top: 20px;
+    margin-left: calc(50%);
+    background: var(--secondary-background-color);
+    border-radius: 8px;
+    border: 1px solid var(--primary-border-color);
+    transform-style: preserve-3d;
+    transform-origin: center;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    transition-duration: 0.2s;
+}
+
+.container::before{
+    content: "Command Prompt";
+    font-family: "Source Code Pro";
+    position: absolute;
+    color: white;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    margin-top: -20px;
+}
+
+.directory{
+    color: hsl(2, 50%, 52%);
+    font-family: "Source Code Pro";
+}
+
+.code{
+    color: rgb(215, 215, 215);
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "Source Code Pro";
+}
