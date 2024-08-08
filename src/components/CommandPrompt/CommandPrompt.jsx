@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+
 import styles from './CommandPrompt.module.css'
 
 function clamp(a, x, y){
@@ -50,6 +51,7 @@ export default function CommandPrompt({}) {
     }, [mousePosition])
 
     useEffect(() => {
+        // This effect handles the '|' symbol that appears at the end of the line
         const interval = setInterval(() => {
             setTypeAppears((prev) => !prev)
         }, 1000);
@@ -63,7 +65,7 @@ export default function CommandPrompt({}) {
     return (
         <div className={styles.container} ref={container} style={
             {
-                transform: !isHovered ? `translateX(-50%) rotateX(0deg) rotateY(0deg)` : `translateX(-50%) rotateX(${clamp(mousePosition.y/5, -20, 20)}deg) rotateY(${ clamp(mousePosition.x/5, -20, 20)}deg)`,
+                transform: !isHovered ? `translateX(-50%) rotateX(0deg) rotateY(0deg)` : `translateX(-50%) rotateX(${clamp(mousePosition.y/5, -15, 15)}deg) rotateY(${ clamp(-mousePosition.x/5, -10, 10)}deg)`,
                 background: !isHovered ? "rgb(23, 24, 22)" : `linear-gradient(${Math.atan2(mousePosition.y, mousePosition.x)*180/Math.PI + 90}deg, rgb(23, 24, 22) ${
                     Math.min(Math.sqrt(Math.pow(mousePosition.x, 2) + Math.pow(mousePosition.y, 2))/3, 60)
                 }%, rgba(60, 60, 60, 0.5) 100%)`

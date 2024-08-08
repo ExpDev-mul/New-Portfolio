@@ -1,0 +1,23 @@
+.container{
+    width: 0%;
+    height: 1px;
+    background-color: rgb(255, 145, 0);
+    position: fixed;
+    left: 0;
+    top: 70px;
+    z-index: 6;
+}
+
+.containerAnimate{
+    animation: loadAnim 1s;
+}
+
+@keyframes loadAnim {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}

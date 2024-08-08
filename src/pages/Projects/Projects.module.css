@@ -41,21 +41,21 @@
 }
 
 .projectsContainerBottom{
-    width: calc(200% + 2px);
+    width: 802px;
     height: 250px;
-    top: 0;
-    left: 0;
-    translate: 0px -250px;
+    position: absolute;
+    margin-top: calc(100% - 125px);
     background: linear-gradient(to bottom, transparent 0%, transparent 50%,  var(--primary-color) 100%);
     pointer-events: none;
 }
 
 .usesContainer{
     width: 400px;
+    max-width: calc(100% - 30px);
     height: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
     gap: 50px;
     justify-content: center;
     position: relative;
@@ -91,33 +91,47 @@
     cursor: pointer;
 }
 
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: var(--secondary-color);
+    border-top: 1px solid var(--primary-border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 150px;
+}
+
+.footerRight{
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-content: flex-end;
+}
+
+
+.footerLeft{
+    padding-left: 150px;
+}
+
+.link{
+    color: var(--third-text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 1500px) {
-    .name{
+    .name, .role, .bio{
         text-align: center;
-    }
-
-    .role{
-        text-align: center;
-    }
-
-    .bio{
-        text-align: center;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
 
     .usesContainer{
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .usesContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bio{
-        padding-left: 30px !important;
-        padding-right: 30px !important;
     }
 }

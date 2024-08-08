@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import { useState } from 'react'
 
 export default function Circle({x, y, color, radius}){
+    // Localized style for circle
     const style = {
         position: "absolute",
         left: "0px",
@@ -14,8 +15,6 @@ export default function Circle({x, y, color, radius}){
     }
 
     return (
-        <div style={style}>
-
-        </div>
+        <div style={style} className={'special_effect'}></div>
     );
 }

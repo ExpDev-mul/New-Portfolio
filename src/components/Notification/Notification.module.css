@@ -1,0 +1,37 @@
+.notification{
+    width: 100%;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 8px;
+    height: auto;
+    animation: 8s ease-in-out notificationAnim forwards;
+}
+
+@keyframes notificationAnim{
+    0%{
+        opacity: 0;
+        transform: rotateX(-90deg) scale(0.4);
+    }
+
+    10%{
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+    }
+
+    90%{
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: rotateX(-90deg) scale(0.4);
+    }
+}
+
+.notificationContent{
+    color: var(--primary-text-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-wrap: break-word;
+}

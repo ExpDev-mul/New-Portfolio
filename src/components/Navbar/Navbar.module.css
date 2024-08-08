@@ -1,10 +1,10 @@
 .container{
-    width: 100vw;
+    width: 100%;
     height: 70px;
     position: fixed;
     left: 0;
     top: 0;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(25px);
     border-bottom: 1px solid var(--secondary-border-color);
 
     display: flex;
@@ -14,8 +14,14 @@
     z-index: 2;
 }
 
+@media screen and (max-width: 1000px) {
+    .name{
+        display: none;
+    }
+}
+
 .name{
-    color: white;
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 1.4rem;
     margin-right: 10px;
@@ -23,7 +29,7 @@
 
 .low_button{
     background-color: transparent;
-    color: rgb(215, 215, 215);
+    color: var(--secondary-text-color);
     font-size: 1rem;
     font-weight: 400;
     border: none;
@@ -34,8 +40,7 @@
 }
 
 .low_button:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-    color: rgb(235, 235, 235);
+    background-color: var(--header-light-buttons);
     cursor: pointer;
 }
 
@@ -43,7 +48,7 @@
     background-color: hsl(2, 50%, 52%);
     color: rgb(255, 255, 255);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     border: none;
     padding: 10px 15px 10px 15px;
     border-radius: 8px;
@@ -54,6 +59,21 @@
 
 .high_button:hover{
     background-color: hsl(2, 50%, 42%);
+}
+
+.high_button::after{
+    content: "";
+    padding: 9px;
+    background: url(../../assets/bx-right-arrow-alt-white.svg);
+    background-size: 18px;
+
+    position: absolute;
+    transform: translateY(0px) translateX(2px);
+    transition-duration: 0.2s;
+}
+
+.high_button:hover::after{
+    transform: translateY(0px) translateX(8px);
 }
 
 .left{
@@ -115,5 +135,7 @@
 }
 
 .current{
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--header-light-buttons);
 }
+
+.current:hover { background-color: var(--header-light-buttons) !important; }

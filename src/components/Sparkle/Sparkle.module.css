@@ -1,0 +1,24 @@
+.image{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    animation: 3s fade infinite;
+    margin-left: 50%;
+}
+
+@keyframes fade{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50%{
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
