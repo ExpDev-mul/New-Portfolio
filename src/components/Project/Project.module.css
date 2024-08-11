@@ -12,6 +12,7 @@
 
 .container:hover{
     background-color: var(--secondary-color-lighten);
+    cursor: pointer;
 }
 
 .name{

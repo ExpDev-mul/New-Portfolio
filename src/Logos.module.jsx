@@ -16,6 +16,7 @@ import express from './assets/Logos/express.svg'
 import mysql from './assets/Logos/mysql.svg'
 import github from './assets/Logos/github.svg'
 import visualstudiocode from './assets/Logos/visualstudiocode.svg'
+import tailwindcss from './assets/Logos/tailwindcss.svg'
 
 // Export & Declaration
 const logos = {
@@ -33,7 +34,8 @@ const logos = {
     "Express": express,
     "MySQL": mysql,
     "GitHub": github,
-    "Visual Studio Code": visualstudiocode
+    "Visual Studio Code": visualstudiocode,
+    "Tailwind CSS": tailwindcss
 }
 
 export default logos;
