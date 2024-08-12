@@ -1,6 +1,6 @@
 <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-    <line x1="25" y1="0" x2="0" y2="25" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
-    <line x1="0" y1="25" x2="25" y2="50" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
-    <line x1="25" y1="50" x2="50" y2="25" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
-    <line x1="50" y1="25" x2="25" y2="0" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
+    <line x1="0" y1="0" x2="50" y2="0" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
+    <line x1="50" y1="0" x2="50" y2="50" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
+    <line x1="50" y1="50" x2="0" y2="50" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
+    <line x1="0" y1="50" x2="0" y2="0" stroke="rgb(30, 30, 30)" stroke-width="1"></line>
 </svg>
