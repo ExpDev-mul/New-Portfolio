@@ -1,7 +1,7 @@
 .container{
     width: auto;
     font-size: 1.2rem;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 15px 10px 15px;
     transform: translateX(-50%);
     margin-left: 50%;
     margin-top: -10px;
@@ -13,14 +13,9 @@
     border: 1px solid var(--secondary-border-color);
     color: var(--primary-text-color);
     margin-bottom: 20px;
-    transition-duration: 0.2s;
 }
 
 .container:hover{
+    transition-duration: 0.2s;
     background-color: var(--secondary-color-lighten);
-}
-
-.container::after{
-    content: "Copy to Clipboard";
-    pointer-events: none;
 }

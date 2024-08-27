@@ -7,6 +7,7 @@ import LocationLoad from './components/LocationLoad/LocationLoad.jsx';
 
 import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
+import Noticeboard from './pages/Noticeboard/Noticeboard.jsx';
 
 import './App.css';
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
         <Route path="/projects" element={<Projects/>} />
+        <Route path="/noticeboard" element={<Noticeboard/>} />
         <Route path="*" element={() => <h1>Page Not Found</h1>} />
       </Routes>
     </>

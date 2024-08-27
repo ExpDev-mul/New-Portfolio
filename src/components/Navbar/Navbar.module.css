@@ -1,5 +1,5 @@
 .container{
-    width: 100%;
+    width: 100vw;
     height: 70px;
     position: fixed;
     left: 0;
@@ -139,3 +139,9 @@
 }
 
 .current:hover { background-color: var(--header-light-buttons) !important; }
+
+@media screen and (max-width: 800px) {
+    .high_button, .linkedin{
+        display: none;
+    }
+}

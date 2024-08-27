@@ -1,6 +1,7 @@
 // This file exports a dictionary containing a key-value pair, where the key is a platform name and value is the logo of that platform.
 
 // Imports
+import next from './assets/Logos/next.svg'
 import react from './assets/Logos/react.svg'
 import nodejs from './assets/Logos/nodejs.svg'
 import php from './assets/Logos/php.svg'
@@ -20,6 +21,7 @@ import tailwindcss from './assets/Logos/tailwindcss.svg'
 
 // Export & Declaration
 const logos = {
+    "Next": next,
     "React": react,
     "Node.js": nodejs,
     "PHP": php,

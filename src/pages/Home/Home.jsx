@@ -61,7 +61,8 @@ export default function Home(){
           <Sparkle radius="20" style={{translate: "0px 90px"}} color="red"/>
           <h1 className={styles.name} style={{textAlign: "center", marginTop: "200px", fontSize: "3.4rem"}}>What I use and Learn<span style={{color: "rgb(255, 0, 50)"}}>:</span></h1>
           <section className={styles.usesContainer}>
-            <Proficiency name="React" logo="../../assets/react.svg"/>
+            <Proficiency name="Next"/>
+            <Proficiency name="React"/>
             <Proficiency name="HTML"/>
             <Proficiency name="CSS"/>
             <Proficiency name="JavaScript"/>
