@@ -1,5 +1,65 @@
 .container{
     width: 300px;
-    height: 250px;
-    background-color: red;
+    height: auto;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-border-color);
+    border-radius: 8px;
+    position: relative;
+}
+
+.side_line{
+    width: 1px;
+    height: calc(100% + 20px);
+    position: absolute;
+    background-color: var(--secondary-border-color);
+    left: 0;
+    top: 0;
+    transform: translateX(-30px) translateY(5px);
+}
+
+.circle{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    background-color: var(--secondary-border-color);
+    position: absolute;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.smile{
+    width: 15px;
+    height: 15px;
+    background-image: url(../../assets/smile.svg);
+    background-size: 100%;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title{
+    color: var(--primary-text-color);
+    padding: 20px;
+    padding-top: 0px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.role{
+    color: var(--third-text-color);
+    font-weight: 300;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: -35px;
+    font-size: 0.9rem;
+}
+
+.content{
+    color: var(--secondary-text-color);
+    font-weight: 300;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: -25px;
+    font-size: 1rem;
 }

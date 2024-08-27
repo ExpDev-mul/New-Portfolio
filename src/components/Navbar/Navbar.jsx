@@ -55,7 +55,7 @@ export default function Navbar({ }){
                     <span className={`${styles.name} ${styles.left}`}>Or Pinto<span style={{color: "hsl(2, 50%, 52%)"}}>;</span></span>
                     <button className={`${styles.low_button} ${styles.left} ${(current === "/" || current === "/home") ? styles.current : ""}`} onClick={() => navigate("/home")}>Home</button>
                     <button className={`${styles.low_button} ${styles.left} ${current === "/projects" ? styles.current : ""}`} onClick={() => navigate("/projects")}>Projects</button>
-                    <button className={`${styles.low_button} ${styles.left} ${current === "/noticeboard" ? styles.current : ""}`} onClick={() => navigate("/noticeboard")}>Noticeboard</button>
+                    <button className={`${styles.low_button} ${styles.left} ${current === "/feedbacks" ? styles.current : ""}`} onClick={() => navigate("/feedbacks")}>Feedbacks</button>
                 </div>
                 
                 <div className={styles.container_section}>
